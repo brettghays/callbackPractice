@@ -20,6 +20,10 @@ and WHAT YOU SHOULD WRITE is the sayHi function that makes the code above work:
 
   // Code Here 
 
+  let first = (arr, cb) => {
+    cb(arr[0])
+  }
+
   
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
