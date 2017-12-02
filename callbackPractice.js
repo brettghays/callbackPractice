@@ -121,7 +121,15 @@ each(names, function(item, indice){
 // When the correct user object is found, invoke the callback with the user object as an argument.
 
 // Code here
-
+let getUserById = (arr, id, cb ) => {
+  var b
+  arr.forEach(x=>{
+    if(x.id==id){
+      b=arr.indexOf(x)
+    }
+  })
+  cb(arr[b])
+}
 
 
 var users = [
