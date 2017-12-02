@@ -51,6 +51,10 @@ last(names, function(lastName){
 // 3. Write a function called multiply that takes in three parameters: two numbers and a callback function.  Invoke the callback, passing in the product of the two numbers multiplied as the argument. 
 
   //Code Here
+let multiply = (num1,num2,cb) => {
+  //var product = num1*num2
+  cb(num1*num2)
+}
 
 
 multiply(4, 3, function(answer){
@@ -64,6 +68,9 @@ multiply(4, 3, function(answer){
 // If the name does not exist, invoke the callback with false as the argument.
 
   //Code Here 
+  let contains = (arr,name,cb) => {
+    arr.indexOf(name)!==-1?cb(true):cb(false)
+  }
 
 
 
