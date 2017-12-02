@@ -37,7 +37,9 @@ first(names, function(firstName){
 // 2. Write a function called last that takes in an array and a callback function, then invokes the callback, passing in the last element in the array as the argument.
 
   //Code Here
-
+let last = (arr,cb)=>{
+  cb(arr[arr.length-1])
+}
 
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
